@@ -6,12 +6,15 @@
 
   <title>deepField Group | Beyond the Surface</title>
 
-  <meta name="description"
-        content="deepField Group — an emerging technology, education and innovation organization building ideas, systems and projects beyond the surface.">
+  <meta
+    name="description"
+    content="deepField Group — an emerging organization focused on technology, education, innovation and meaningful systems."
+  >
 
-  <meta name="theme-color" content="#07111f">
+  <meta name="theme-color" content="#050a12">
 
   <style>
+
     * {
       margin: 0;
       padding: 0;
@@ -46,7 +49,10 @@
       text-decoration: none;
     }
 
-    /* NAVBAR */
+
+    /* =========================
+       NAVIGATION
+    ========================= */
 
     nav {
       position: fixed;
@@ -55,14 +61,17 @@
       width: 100%;
       z-index: 1000;
       padding: 16px 20px;
+
       background: rgba(5,10,18,0.82);
       backdrop-filter: blur(15px);
+
       border-bottom: 1px solid var(--border);
     }
 
     .nav-inner {
       max-width: 1150px;
       margin: auto;
+
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -71,7 +80,7 @@
     .logo {
       font-size: 21px;
       font-weight: 800;
-      letter-spacing: -0.7px;
+      letter-spacing: 0;
     }
 
     .logo span {
@@ -81,25 +90,45 @@
     .nav-links {
       display: none;
       gap: 24px;
+
       font-size: 14px;
       color: var(--muted);
+    }
+
+    .nav-links a {
+      transition: 0.2s;
     }
 
     .nav-links a:hover {
       color: white;
     }
 
-    /* HERO */
+
+    /* =========================
+       HERO
+    ========================= */
 
     .hero {
       min-height: 100vh;
+
       display: flex;
       align-items: center;
+
       position: relative;
+
       padding: 120px 22px 70px;
+
       background:
-        radial-gradient(circle at 75% 25%, rgba(22,131,255,0.18), transparent 30%),
-        radial-gradient(circle at 20% 70%, rgba(22,131,255,0.08), transparent 30%),
+        radial-gradient(
+          circle at 75% 25%,
+          rgba(22,131,255,0.18),
+          transparent 30%
+        ),
+        radial-gradient(
+          circle at 20% 70%,
+          rgba(22,131,255,0.08),
+          transparent 30%
+        ),
         var(--bg);
     }
 
@@ -111,23 +140,36 @@
 
     .eyebrow {
       display: inline-block;
+
       padding: 7px 12px;
+
       border: 1px solid rgba(22,131,255,0.35);
+
       background: rgba(22,131,255,0.08);
+
       border-radius: 50px;
+
       color: #72b8ff;
+
       font-size: 12px;
       font-weight: bold;
+
       letter-spacing: 1.5px;
+
       margin-bottom: 22px;
+
       text-transform: uppercase;
     }
 
     .hero h1 {
       font-size: clamp(48px, 13vw, 100px);
-      line-height: 0.95;
-      letter-spacing: -5px;
+
+      line-height: 1;
+
+      letter-spacing: -1px;
+
       max-width: 850px;
+
       margin-bottom: 25px;
     }
 
@@ -137,8 +179,11 @@
 
     .hero p {
       color: var(--muted);
+
       max-width: 650px;
+
       font-size: 17px;
+
       margin-bottom: 35px;
     }
 
@@ -150,10 +195,14 @@
 
     .btn {
       display: inline-block;
+
       padding: 13px 20px;
+
       border-radius: 8px;
+
       font-weight: bold;
       font-size: 14px;
+
       transition: 0.25s;
     }
 
@@ -177,7 +226,10 @@
       transform: translateY(-2px);
     }
 
-    /* GENERAL */
+
+    /* =========================
+       GENERAL SECTIONS
+    ========================= */
 
     section {
       padding: 90px 22px;
@@ -190,27 +242,39 @@
 
     .section-label {
       color: var(--blue);
+
       font-size: 12px;
       font-weight: bold;
+
       letter-spacing: 2px;
+
       text-transform: uppercase;
+
       margin-bottom: 12px;
     }
 
     .section-title {
       font-size: clamp(30px, 7vw, 52px);
-      line-height: 1.05;
-      letter-spacing: -2px;
+
+      line-height: 1.08;
+
+      letter-spacing: 0;
+
       margin-bottom: 20px;
     }
 
     .section-text {
       max-width: 680px;
+
       color: var(--muted);
+
       font-size: 16px;
     }
 
-    /* ABOUT */
+
+    /* =========================
+       ABOUT
+    ========================= */
 
     .about {
       background: var(--bg2);
@@ -218,47 +282,71 @@
 
     .about-grid {
       display: grid;
+
       gap: 35px;
+
       margin-top: 45px;
     }
 
     .about-card {
       padding: 28px;
+
       border: 1px solid var(--border);
+
       background: rgba(255,255,255,0.025);
+
       border-radius: 14px;
     }
 
     .about-card h3 {
       margin-bottom: 10px;
+
       font-size: 19px;
+
+      letter-spacing: 0;
     }
 
     .about-card p {
       color: var(--muted);
+
       font-size: 14px;
     }
 
-    /* DFIELD */
+
+    /* =========================
+       DFIELD REGISTRY
+    ========================= */
 
     .registry {
       position: relative;
+
       overflow: hidden;
     }
 
     .registry-box {
       margin-top: 45px;
+
       padding: 35px 25px;
+
       border-radius: 18px;
+
       border: 1px solid rgba(22,131,255,0.25);
+
       background:
-        linear-gradient(135deg, rgba(22,131,255,0.12), rgba(255,255,255,0.025));
+        linear-gradient(
+          135deg,
+          rgba(22,131,255,0.12),
+          rgba(255,255,255,0.025)
+        );
     }
 
     .registry-name {
       font-size: clamp(35px, 9vw, 70px);
+
       font-weight: 900;
-      letter-spacing: -3px;
+
+      letter-spacing: -1px;
+
       margin-bottom: 10px;
     }
 
@@ -268,17 +356,24 @@
 
     .registry-code {
       color: #72b8ff;
+
       font-size: 13px;
+
       letter-spacing: 1px;
+
       margin-bottom: 25px;
     }
 
     .registry-box p {
       color: var(--muted);
+
       max-width: 700px;
     }
 
-    /* PROJECTS */
+
+    /* =========================
+       PROJECTS
+    ========================= */
 
     .projects {
       background: var(--bg2);
@@ -286,78 +381,118 @@
 
     .project-grid {
       display: grid;
+
       gap: 16px;
+
       margin-top: 45px;
     }
 
     .project {
       padding: 25px;
+
       border: 1px solid var(--border);
+
       border-radius: 14px;
+
       background: var(--card);
+
       transition: 0.25s;
     }
 
     .project:hover {
       transform: translateY(-5px);
+
       border-color: rgba(22,131,255,0.4);
     }
 
     .project-number {
       color: var(--blue);
+
       font-size: 12px;
+
       font-weight: bold;
+
       margin-bottom: 18px;
     }
 
     .project h3 {
       margin-bottom: 8px;
+
       font-size: 21px;
+
+      letter-spacing: 0;
     }
 
     .project p {
       color: var(--muted);
+
       font-size: 14px;
     }
 
-    /* FOUNDER */
+
+    /* =========================
+       FOUNDER
+    ========================= */
 
     .founder-grid {
       display: grid;
+
       gap: 35px;
+
       align-items: center;
+
       margin-top: 45px;
     }
 
     .founder-card {
       padding: 30px;
+
       border: 1px solid var(--border);
+
       border-radius: 16px;
-      background: linear-gradient(145deg, #0d1929, #07101c);
+
+      background:
+        linear-gradient(
+          145deg,
+          #0d1929,
+          #07101c
+        );
     }
 
     .founder-name {
       font-size: 30px;
+
       font-weight: 800;
+
+      letter-spacing: 0;
+
       margin-bottom: 5px;
     }
 
     .founder-role {
       color: var(--blue);
+
       font-size: 13px;
+
       font-weight: bold;
+
       margin-bottom: 20px;
     }
 
     .founder-card p {
       color: var(--muted);
+
       font-size: 15px;
     }
 
-    /* CONTACT */
+
+    /* =========================
+       CONTACT
+    ========================= */
 
     .contact {
       background: var(--bg2);
+
       text-align: center;
     }
 
@@ -367,31 +502,48 @@
 
     .socials {
       display: flex;
+
       justify-content: center;
+
       flex-wrap: wrap;
+
       gap: 10px;
     }
 
     .social {
       padding: 10px 16px;
+
       border: 1px solid var(--border);
+
       border-radius: 8px;
+
       font-size: 13px;
+
       color: var(--muted);
+
+      transition: 0.2s;
     }
 
     .social:hover {
       border-color: var(--blue);
+
       color: white;
     }
 
-    /* FOOTER */
+
+    /* =========================
+       FOOTER
+    ========================= */
 
     footer {
       padding: 30px 22px;
+
       border-top: 1px solid var(--border);
+
       text-align: center;
+
       color: #687b91;
+
       font-size: 12px;
     }
 
@@ -399,7 +551,10 @@
       color: white;
     }
 
-    /* DESKTOP */
+
+    /* =========================
+       DESKTOP
+    ========================= */
 
     @media (min-width: 750px) {
 
@@ -427,15 +582,23 @@
       .founder-grid {
         grid-template-columns: 1fr 1fr;
       }
+
     }
+
   </style>
+
 </head>
+
 
 <body>
 
-  <!-- NAVIGATION -->
+
+  <!-- =========================
+       NAVIGATION
+  ========================= -->
 
   <nav>
+
     <div class="nav-inner">
 
       <a href="#home" class="logo">
@@ -443,18 +606,38 @@
       </a>
 
       <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#registry">dField</a>
-        <a href="#projects">Projects</a>
-        <a href="#founder">Founder</a>
-        <a href="#contact">Contact</a>
+
+        <a href="#about">
+          About
+        </a>
+
+        <a href="#registry">
+          dField
+        </a>
+
+        <a href="#projects">
+          Projects
+        </a>
+
+        <a href="#founder">
+          Founder
+        </a>
+
+        <a href="#contact">
+          Contact
+        </a>
+
       </div>
 
     </div>
+
   </nav>
 
 
-  <!-- HERO -->
+
+  <!-- =========================
+       HERO
+  ========================= -->
 
   <header class="hero" id="home">
 
@@ -469,11 +652,13 @@
       </h1>
 
       <p>
-        An emerging organization focused on building ideas, systems,
-        knowledge and technology with a long-term vision for impact.
+        An emerging organization focused on building ideas,
+        systems, knowledge and technology with a long-term
+        vision for impact.
       </p>
 
       <div class="buttons">
+
         <a href="#projects" class="btn btn-primary">
           Explore projects
         </a>
@@ -481,6 +666,7 @@
         <a href="#about" class="btn btn-outline">
           Discover deepField
         </a>
+
       </div>
 
     </div>
@@ -488,7 +674,10 @@
   </header>
 
 
-  <!-- ABOUT -->
+
+  <!-- =========================
+       ABOUT
+  ========================= -->
 
   <section class="about" id="about">
 
@@ -504,37 +693,58 @@
       </h2>
 
       <p class="section-text">
-        deepField Group is being developed as a long-term platform for
-        ideas, technology, education and innovation. The goal is simple:
-        look beyond the obvious, develop useful systems and turn ideas
+        deepField Group is being developed as a long-term
+        platform for ideas, technology, education and
+        innovation. The goal is simple: look beyond the
+        obvious, develop useful systems and turn ideas
         into meaningful projects.
       </p>
 
+
       <div class="about-grid">
 
-        <div class="about-card">
-          <h3>Innovation</h3>
-          <p>
-            Exploring new ideas and turning concepts into practical
-            systems, tools and projects.
-          </p>
-        </div>
 
         <div class="about-card">
-          <h3>Knowledge</h3>
+
+          <h3>
+            Innovation
+          </h3>
+
           <p>
-            Building organized systems that make learning, research
-            and information easier to navigate.
+            Exploring new ideas and turning concepts into
+            practical systems, tools and projects.
           </p>
+
         </div>
 
+
         <div class="about-card">
-          <h3>Technology</h3>
+
+          <h3>
+            Knowledge
+          </h3>
+
           <p>
-            Using technology as a foundation for future products,
-            platforms and solutions.
+            Building organized systems that make learning,
+            research and information easier to navigate.
           </p>
+
         </div>
+
+
+        <div class="about-card">
+
+          <h3>
+            Technology
+          </h3>
+
+          <p>
+            Using technology as a foundation for future
+            products, platforms and solutions.
+          </p>
+
+        </div>
+
 
       </div>
 
@@ -543,7 +753,10 @@
   </section>
 
 
-  <!-- DFIELD REGISTRY -->
+
+  <!-- =========================
+       DFIELD REGISTRY
+  ========================= -->
 
   <section class="registry" id="registry">
 
@@ -557,6 +770,7 @@
         Organized knowledge.
       </h2>
 
+
       <div class="registry-box">
 
         <div class="registry-name">
@@ -568,16 +782,17 @@
         </div>
 
         <p>
-          A structured academic and knowledge-management system designed
-          to organize topics, questions, revision materials and deeper
-          learning pathways.
+          A structured academic and knowledge-management
+          system designed to organize topics, questions,
+          revision materials and deeper learning pathways.
         </p>
 
         <br>
 
         <p>
-          From topic-based study systems to coded question registries,
-          dField is designed to go beyond ordinary study organization.
+          From topic-based study systems to coded question
+          registries, dField is designed to go beyond
+          ordinary study organization.
         </p>
 
       </div>
@@ -587,7 +802,10 @@
   </section>
 
 
-  <!-- PROJECTS -->
+
+  <!-- =========================
+       PROJECTS
+  ========================= -->
 
   <section class="projects" id="projects">
 
@@ -602,46 +820,86 @@
       </h2>
 
       <p class="section-text">
-        A growing collection of projects exploring education,
-        technology, environmental awareness and digital systems.
+        A growing collection of projects exploring
+        education, technology, environmental awareness
+        and digital systems.
       </p>
+
 
       <div class="project-grid">
 
-        <div class="project">
-          <div class="project-number">01 / EDUCATION</div>
-          <h3>dField Registry</h3>
-          <p>
-            A structured knowledge and academic organization system.
-          </p>
-        </div>
 
         <div class="project">
-          <div class="project-number">02 / ENVIRONMENT</div>
-          <h3>GREENVERSE</h3>
+
+          <div class="project-number">
+            01 / EDUCATION
+          </div>
+
+          <h3>
+            dField Registry
+          </h3>
+
           <p>
-            Environmental education and awareness through accessible
-            digital content.
+            A structured knowledge and academic
+            organization system.
           </p>
+
         </div>
 
-        <div class="project">
-          <div class="project-number">03 / DIGITAL SYSTEMS</div>
-          <h3>MSAMSS Portal</h3>
-          <p>
-            A digital information system designed for organized
-            student association management.
-          </p>
-        </div>
 
         <div class="project">
-          <div class="project-number">04 / FUTURE</div>
-          <h3>Musdery</h3>
+
+          <div class="project-number">
+            02 / ENVIRONMENT
+          </div>
+
+          <h3>
+            GREENVERSE
+          </h3>
+
           <p>
-            An emerging technology and systems concept with a broader
-            long-term vision.
+            Environmental education and awareness
+            through accessible digital content.
           </p>
+
         </div>
+
+
+        <div class="project">
+
+          <div class="project-number">
+            03 / DIGITAL SYSTEMS
+          </div>
+
+          <h3>
+            MSAMSS Portal
+          </h3>
+
+          <p>
+            A digital information system designed
+            for organized student association management.
+          </p>
+
+        </div>
+
+
+        <div class="project">
+
+          <div class="project-number">
+            04 / FUTURE
+          </div>
+
+          <h3>
+            Musdery
+          </h3>
+
+          <p>
+            An emerging technology and systems concept
+            with a broader long-term vision.
+          </p>
+
+        </div>
+
 
       </div>
 
@@ -650,7 +908,10 @@
   </section>
 
 
-  <!-- FOUNDER -->
+
+  <!-- =========================
+       FOUNDER
+  ========================= -->
 
   <section id="founder">
 
@@ -664,15 +925,20 @@
         The person behind the vision.
       </h2>
 
+
       <div class="founder-grid">
 
+
         <div>
+
           <p class="section-text">
-            deepField Group began as an ambitious attempt to bring
-            different ideas, projects and systems under one long-term
-            vision.
+            deepField Group began as an ambitious attempt
+            to bring different ideas, projects and systems
+            under one long-term vision.
           </p>
+
         </div>
+
 
         <div class="founder-card">
 
@@ -685,12 +951,13 @@
           </div>
 
           <p>
-            Student, creator and aspiring technology entrepreneur
-            interested in education, systems, science and future
-            technology.
+            Student, creator and aspiring technology
+            entrepreneur interested in education, systems,
+            science and future technology.
           </p>
 
         </div>
+
 
       </div>
 
@@ -699,7 +966,10 @@
   </section>
 
 
-  <!-- CONTACT -->
+
+  <!-- =========================
+       CONTACT
+  ========================= -->
 
   <section class="contact" id="contact">
 
@@ -714,19 +984,59 @@
       </h2>
 
       <p class="section-text">
-        deepField Group is still growing. Follow the journey and
-        watch the ideas develop into something bigger.
+        deepField Group is still growing. Follow the
+        journey and watch the ideas develop into
+        something bigger.
       </p>
 
+
       <div class="socials">
+
 
         <a
           class="social"
           href="https://instagram.com/young_ceo76"
-          target="_blank">
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Instagram · @young_ceo76
         </a>
 
+
         <a
           class="social"
-          href="https://
+          href="https://tiktok.com/@youngceo_official"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          TikTok · @youngceo_official
+        </a>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       FOOTER
+  ========================= -->
+
+  <footer>
+
+    © 2026
+    <strong>deepField Group</strong>.
+    All rights reserved.
+
+    <br><br>
+
+    Beyond the surface.
+
+  </footer>
+
+
+</body>
+</html>
